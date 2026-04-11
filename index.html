@@ -8,6 +8,7 @@ body {
 font-family: Arial, sans-serif;
 text-align: center;
 }
+
 /* Buttons */
 #filter-buttons button {
 margin: 5px;
@@ -15,13 +16,22 @@ padding: 10px;
 cursor: pointer;
 }
 
-/* Clothing items */
-.clothing {
-display: none;
-margin: 10px;
-padding: 15px;
-border: 1px solid #ccc;
+#closet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
+
+.clothing {
+    display: none;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
 .show {
 display: block;
 }
@@ -45,6 +55,15 @@ display: block;
 <button onclick="filterSelection('dresses')">Dresses</button>
 <button onclick="filterSelection('winter')">Winter</button>
 </div>
+
+<div id="closet-container">
+<div class="clothing work">👔 Blazer Outfit (Work)</div>
+<div class="clothing goingout">✨ Dinner Outfit (Going Out)</div>
+<div class="clothing workout">🏋️ Gym Set (Workout)</div>
+<div class="clothing dresses">👗 Summer Dress (Dresses)</div>
+<div class="clothing winter">🧥 Coat Outfit (Winter)</div>
+</div>
+
 
 </body>
 </html>
