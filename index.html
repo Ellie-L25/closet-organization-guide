@@ -19,11 +19,10 @@ h2 {
 margin: 5px;
 padding: 10px 15px;
 cursor: pointer;
-border: none;
-border-color: #333;
+border: 1px solid #333;
 border-radius: 20px;
-padding: 8px 15px;
 transition: 0.3s;
+background-color: white;
 }
 
 #filter-buttons button:hover {
@@ -75,6 +74,11 @@ nav a:hover {
     color: #8e4f58;
 }
 
+.active {
+    background-color: #b76e79;
+    color: white;
+}
+
 </style>
 </head>
 
@@ -90,7 +94,7 @@ nav a:hover {
 <p>Learn how to organize your closet simply and effectively.</p>
 <p>Stay organized every day!</p>
 
-<h2>My Closet System</h2>
+<h2 id="closet" Closet System</h2>
 <p>This system is based on how I personally organize my closet, seperating items by lifestyle and purpose to make everyday decisons easier.</p>
 
 
@@ -134,7 +138,7 @@ nav a:hover {
 
 <h2 id="tips">Closet Organization Tips</h2>
 <ul>
-    <li>Decluter your closet every seeason</li>
+    <li>Declutter your closet every seeason</li>
     <li>Donate clothes you no longer wear</li>
     <li>Use matching hangers for a clean look</li>
     <li>Organize by category, then by color</li>
@@ -145,6 +149,13 @@ filterSelection("all");
 
 function filterSelection(category) {
 let items = document.getElementsByClassName("clothing");
+let buttons = document.querySelectorAll("#filter-buttons buttons");
+
+for (let b of buttons) {
+    b.classList.remove("active");
+}
+
+event?.target?.classList.add("active");
 
 for (let i = 0; i < items.length; i++) {
 items[i].classList.remove("show");
