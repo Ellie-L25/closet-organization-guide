@@ -11,7 +11,7 @@ This project was created to solve the common problem of closet clutter and decis
 - CSS: Used for styling, layout, and visual design 
 - JavaScript: Used to create interactivity, specifically the filtering functionality 
 - GitHub: Used for version control and project management
-- GitHub Pages:Used to deploy the project as a live website 
+- GitHub Pages: Used to deploy the project as a live website 
 
 These tools were chosen because they are fundamental web development technologies and allowed me to build a lightweight, functional, and accessible project. 
 
