@@ -7,14 +7,24 @@
 body {
 font-family: Arial, sans-serif;
 text-align: center;
+background-color: #f5f5f5;
 }
 
-
+h2 {
+    margin-top: 30px;
+}
 
 #filter-buttons button {
 margin: 5px;
 padding: 10px;
 cursor: pointer;
+border: none;
+border-radius: 20px;
+padding: 8px 15px;
+}
+
+#filter-buttons button:hover {
+    background-color: #ddd;
 }
 
 #closet-container {
@@ -32,6 +42,7 @@ cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .clothing img {
@@ -48,7 +59,7 @@ display: block;
 
 .clothing:hover {
     transform: scale(1.05);
-    transition: 0.3;
+    transition: 0.3s ease;
 }
 
 </style>
@@ -92,7 +103,7 @@ display: block;
     </div>
 <div class="clothing workout">
     <img src="images/gym.webp" alt="Workout outfit"> 
-    <p><strong>Gym Set</strong></p>
+    <p><strong>Gym Sets</strong></p>
     <p>Comfortable and easy-to-grab outfits to help you stay consistent with workouts.</p>
     </div>
 <div class="clothing dresses">
