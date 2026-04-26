@@ -15,4 +15,5 @@ GitHub Pages:Used to deploy the project as a live website These tools were chose
 
 ## How to visit it Live Site: 
 https://ellie-l25.github.io/closet-organization-guide/#closet
+
 GitHub Repository: https://github.com/Ellie-L25/closet-organization-guide
