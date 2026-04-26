@@ -7,7 +7,8 @@
 body {
 font-family: Arial, sans-serif;
 text-align: center;
-background-color: #f5f5f5;
+background-color: #f7f7fb;
+color: #333;
 }
 
 h2 {
@@ -16,15 +17,18 @@ h2 {
 
 #filter-buttons button {
 margin: 5px;
-padding: 10px;
+padding: 10px 15px;
 cursor: pointer;
 border: none;
+border-color: #333;
 border-radius: 20px;
 padding: 8px 15px;
+transition: 0.3s;
 }
 
 #filter-buttons button:hover {
-    background-color: #ddd;
+    background-color: #b76e79;
+    color: white;
 }
 
 #closet-container {
@@ -42,7 +46,8 @@ padding: 8px 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    background-color: white;
 }
 
 .clothing img {
@@ -60,6 +65,14 @@ display: block;
 .clothing:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
+}
+
+nav a{
+    color: #b76e79;
+}
+
+nav a:hover {
+    color: #8e4f58;
 }
 
 </style>
