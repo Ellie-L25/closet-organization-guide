@@ -89,6 +89,24 @@ li {
     line-height: 1.2;
 }
 
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+    border-left: 4px solid #b76e79;
+    transition: 0.2s ease;
+}
+
 </style>
 </head>
 
@@ -146,13 +164,12 @@ li {
    
 </div>
 
-<h2 id="tips">Closet Organization Tips</h2>
-<ul>
-    <li>Declutter your closet every season</li>
-    <li>Donate clothes you no longer wear</li>
-    <li>Use matching hangers for a clean look</li>
-    <li>Organize by category, then by color</li>
-</ul>
+<div class="tips-container">
+    <div class="tip-card">Declutter your closet every season</div>
+    <div class="tip-card">Donate clothes you no longer wear</div>
+    <div class="tip-card">Use matching hangers for a clean look</div>
+    <div class="tip-card">Organize by category, then by color</div>
+</div>
 
 <script>
 filterSelection("all");
